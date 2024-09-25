@@ -1,0 +1,1 @@
+create winform C# to control the speed of motor 
