@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"derobo\startup_stm32f103xb.o"
+"derobo\main.o"
+"derobo\stm32f1xx_it.o"
+"derobo\stm32f1xx_hal_msp.o"
+"derobo\stm32f1xx_hal_gpio_ex.o"
+"derobo\stm32f1xx_hal_can.o"
+"derobo\stm32f1xx_hal.o"
+"derobo\stm32f1xx_hal_rcc.o"
+"derobo\stm32f1xx_hal_rcc_ex.o"
+"derobo\stm32f1xx_hal_gpio.o"
+"derobo\stm32f1xx_hal_dma.o"
+"derobo\stm32f1xx_hal_cortex.o"
+"derobo\stm32f1xx_hal_pwr.o"
+"derobo\stm32f1xx_hal_flash.o"
+"derobo\stm32f1xx_hal_flash_ex.o"
+"derobo\stm32f1xx_hal_exti.o"
+"derobo\stm32f1xx_hal_tim.o"
+"derobo\stm32f1xx_hal_tim_ex.o"
+"derobo\system_stm32f1xx.o"
+"derobo\bts_driver.o"
+--strict --scatter "deRobo\deRobo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "deRobo.map" -o deRobo\deRobo.axf
